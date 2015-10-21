@@ -11,6 +11,8 @@
 #import "Task.h"
 #import "InputTask.h"
 #import "TaskDb.h"
+#import "MBProgressHUD.h"
+#import "CustomURLCache.h"
 
 @interface RootViewController ()
 {
@@ -23,6 +25,8 @@
 
 @implementation RootViewController
 
+@synthesize webView = _webView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,8 +36,7 @@
     return self;
 }
 
-- (void)loadView
-{
+- (void)loadView {
     UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     self.view = view;
     
@@ -51,14 +54,14 @@
     _inputTask = [[InputTask alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, 65)];
 
     [_inputTask.button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [_inputTask.webBtn addTarget:self action:@selector(buttonWebClk:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_inputTask];
 //    [self.view addSubview:_button];
     [self.view addSubview:_tableView];
     
 }
 
-- (void)buttonAction:(id)sender
-{
+- (void)buttonAction:(id)sender {
 //    NSLog(@"%@", _tf.text);
     Task *task = [[Task alloc] init];
 //    task.date = @"今天";
@@ -70,6 +73,15 @@
     [[TaskDb shareInstance] addTask:task];
     [self loadData];
     _inputTask.inputText.text = @"";
+}
+
+- (void)buttonWebClk:(id)sender {
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+    webView.delegate = self;
+    self.webView = webView;
+    [self.view addSubview:_webView];
+
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com/"]]];
 }
 
 - (void)viewDidLoad {
@@ -180,4 +192,17 @@
     [self.view endEditing:YES];
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"Loading...";
+}
 @end

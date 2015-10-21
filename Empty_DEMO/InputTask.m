@@ -35,6 +35,12 @@
         [_button setTitleColor:[UIColor colorWithHexString:@"dc143c"] forState:UIControlStateNormal];
         [_button setTitleColor:[UIColor colorWithHexString:@"006400"] forState:UIControlStateHighlighted];
        
+        _webBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _webBtn.frame = CGRectMake(10, 30, 40, 35);
+        [_webBtn setBackgroundColor:[UIColor redColor]];
+        [_webBtn setTitle:@"WEB" forState:UIControlStateNormal];
+        [_webBtn setTitleColor:[UIColor colorWithHexString:@"dc143c"] forState:UIControlStateNormal];
+        [_webBtn setTitleColor:[UIColor colorWithHexString:@"006400"] forState:UIControlStateHighlighted];
 //        [_button setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlEventTouchUpInside];
         
 //        CGSize imageSize = CGSizeMake(_button.frame.size.width, _button.frame.size.height);
@@ -58,8 +64,7 @@
         [_button sizeToFit];
         [self addSubview:_inputText];
         [self addSubview:_button];
-        
-        
+        [self addSubview:_webBtn];
     }
     return self;
 }

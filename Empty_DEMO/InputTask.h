@@ -12,5 +12,5 @@
 
 @property (nonatomic, strong) UITextField *inputText;
 @property (nonatomic, strong) UIButton    *button;
-
+@property (nonatomic, strong) UIButton    *webBtn;
 @end

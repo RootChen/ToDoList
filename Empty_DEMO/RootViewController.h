@@ -10,4 +10,5 @@
 
 @interface RootViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,retain)NSMutableArray *data;
+@property(nonatomic, retain) UIWebView *webView;
 @end
