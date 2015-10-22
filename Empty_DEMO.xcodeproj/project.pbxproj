@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		5F0AE3941BD144F700C4A867 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0AE3921BD144F700C4A867 /* libsqlite3.0.tbd */; };
 		5F0AE3951BD144F700C4A867 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F0AE3931BD144F700C4A867 /* libsqlite3.tbd */; };
-		5F1226751BD7D6E200CF7688 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F12266F1BD7D6E200CF7688 /* CustomURLCache.m */; settings = {ASSET_TAGS = (); }; };
-		5F1226761BD7D6E200CF7688 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1226711BD7D6E200CF7688 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
-		5F1226771BD7D6E200CF7688 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1226741BD7D6E200CF7688 /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
-		5F12267A1BD7D77700CF7688 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1226791BD7D77700CF7688 /* Util.m */; settings = {ASSET_TAGS = (); }; };
+		5F1226751BD7D6E200CF7688 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F12266F1BD7D6E200CF7688 /* CustomURLCache.m */; };
+		5F1226761BD7D6E200CF7688 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1226711BD7D6E200CF7688 /* Reachability.m */; };
+		5F1226771BD7D6E200CF7688 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1226741BD7D6E200CF7688 /* MBProgressHUD.m */; };
+		5F12267A1BD7D77700CF7688 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1226791BD7D77700CF7688 /* Util.m */; };
 		5F619B4F1B4826CB002E20F6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F619B4E1B4826CB002E20F6 /* RootViewController.m */; };
-		5FA3DF6B1BD24B370085FC09 /* BaseDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3DF6A1BD24B370085FC09 /* BaseDB.m */; settings = {ASSET_TAGS = (); }; };
-		5FA3DF6E1BD24DFC0085FC09 /* TaskDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3DF6D1BD24DFC0085FC09 /* TaskDb.m */; settings = {ASSET_TAGS = (); }; };
+		5FA3DF6B1BD24B370085FC09 /* BaseDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3DF6A1BD24B370085FC09 /* BaseDB.m */; };
+		5FA3DF6E1BD24DFC0085FC09 /* TaskDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA3DF6D1BD24DFC0085FC09 /* TaskDb.m */; };
 		5FC6D16B1B324C030086FC53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6D16A1B324C030086FC53 /* Foundation.framework */; };
 		5FC6D16D1B324C030086FC53 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6D16C1B324C030086FC53 /* CoreGraphics.framework */; };
 		5FC6D16F1B324C030086FC53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC6D16E1B324C030086FC53 /* UIKit.framework */; };
@@ -33,6 +33,7 @@
 		5FEF4B0B1B4D0B0600AA94E7 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4B0A1B4D0B0600AA94E7 /* TaskCell.m */; };
 		5FEF4B0E1B4D11D000AA94E7 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4B0D1B4D11D000AA94E7 /* Task.m */; };
 		5FEF4B111B4D1A4F00AA94E7 /* InputTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEF4B101B4D1A4F00AA94E7 /* InputTask.m */; };
+		5FF876D31BD8D13000F06855 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 5FF876D21BD8D13000F06855 /* README.md */; };
 		5FFD63351B85ADC200094C6F /* UIColor+expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFD63341B85ADC200094C6F /* UIColor+expanded.m */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		5FEF4B0D1B4D11D000AA94E7 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		5FEF4B0F1B4D1A4F00AA94E7 /* InputTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTask.h; sourceTree = "<group>"; };
 		5FEF4B101B4D1A4F00AA94E7 /* InputTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTask.m; sourceTree = "<group>"; };
+		5FF876D21BD8D13000F06855 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5FFD63331B85ADC200094C6F /* UIColor+expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+expanded.h"; sourceTree = SOURCE_ROOT; };
 		5FFD63341B85ADC200094C6F /* UIColor+expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+expanded.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 		5FC6D15E1B324C020086FC53 = {
 			isa = PBXGroup;
 			children = (
+				5FF876D21BD8D13000F06855 /* README.md */,
 				5FC6D1701B324C030086FC53 /* Empty_DEMO */,
 				5FC6D1891B324C030086FC53 /* Empty_DEMOTests */,
 				5FC6D1681B324C030086FC53 /* Products */,
@@ -328,6 +331,7 @@
 				5FA3DF6B1BD24B370085FC09 /* BaseDB.m in Sources */,
 				5F1226771BD7D6E200CF7688 /* MBProgressHUD.m in Sources */,
 				5FEF4B111B4D1A4F00AA94E7 /* InputTask.m in Sources */,
+				5FF876D31BD8D13000F06855 /* README.md in Sources */,
 				5FC6D1771B324C030086FC53 /* main.m in Sources */,
 				5F619B4F1B4826CB002E20F6 /* RootViewController.m in Sources */,
 				5FA3DF6E1BD24DFC0085FC09 /* TaskDb.m in Sources */,
